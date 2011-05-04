@@ -1,4 +1,6 @@
 LabancaAds::Application.routes.draw do
+  resources :advertisements
+
   get "pages/home"
 
   get "pages/about"

@@ -1,4 +1,6 @@
 LabancaAds::Application.routes.draw do
+  get "users/dashboard"
+
   devise_for :users
 
   resources :advertisements

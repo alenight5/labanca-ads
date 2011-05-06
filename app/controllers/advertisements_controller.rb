@@ -43,6 +43,7 @@ class AdvertisementsController < ApplicationController
   # POST /advertisements.xml
   def create
     @advertisement = Advertisement.new(params[:advertisement])
+    @advertisement.user = current_user
 
     respond_to do |format|
       if @advertisement.save
